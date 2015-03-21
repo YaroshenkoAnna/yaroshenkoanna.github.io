@@ -1,0 +1,53 @@
+.wrap{
+	margin-top: 50px;
+}
+
+.tab{
+	float: left;
+}
+
+
+.tab div{
+	width: 200px;
+	height: 85px;
+	border: 1px solid #BAB7B7;
+	position: relative;
+	cursor: pointer;
+}
+
+.tab div:not(:last-of-type){
+	border-bottom: 0;
+}
+
+.tab div.active{
+	background: #FF7B4A;
+	border-color: #FF7B4A;
+}
+
+.active:after {
+	content: '';
+	top: 28px;
+	right: -17px;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-left: 17px solid #FF7B4A;
+	border-bottom: 15px solid transparent;
+	z-index: 2;
+}
+
+.image-panel{
+	/*width: 910px;*/
+	height: 345px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+img{
+	position: relative;
+
+}
+
+
+

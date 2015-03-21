@@ -1,31 +1,31 @@
 'use strict'
 
 function throttle(fn, threshhold, scope) {
-  threshhold || (threshhold = 250);
-  var last,
-      deferTimer;
-  return function () {
-    var context = scope || this;
+	threshhold || (threshhold = 250);
+	var last,
+		deferTimer;
+	return function() {
+		var context = scope || this;
 
-    var now = +new Date,
-        args = arguments;
-    if (last && now < last + threshhold) {
-      // hold on to it
-      clearTimeout(deferTimer);
-      deferTimer = setTimeout(function () {
-        last = now;
-        fn.apply(context, args);
-      }, threshhold);
-    } else {
-      last = now;
-      fn.apply(context, args);
-    }
-  };
+		var now = +new Date,
+			args = arguments;
+		if (last && now < last + threshhold) {
+			// hold on to it
+			clearTimeout(deferTimer);
+			deferTimer = setTimeout(function() {
+				last = now;
+				fn.apply(context, args);
+			}, threshhold);
+		} else {
+			last = now;
+			fn.apply(context, args);
+		}
+	};
 }
 
 
 (function() {
-	
+
 	var $div = $('#featured-comic').parent().parent().addClass('main-section');
 	var numberOfLoadPictures = 0;
 	var isImageLoad = false;
@@ -78,4 +78,3 @@ function throttle(fn, threshhold, scope) {
 
 	}
 })()
-

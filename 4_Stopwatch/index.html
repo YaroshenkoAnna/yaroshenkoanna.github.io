@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Секундомер</title>
+	<link rel="stylesheet" href="CSS/main.css">
+	<script src="JS/script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-4">
+				<h2 class="stopwatch-current">00:00:00:000</h2>
+				<div class="stopwatch-laps">
+				</div>
+			</div>
+			<div class="col-xs-4 stopwatch-controls">
+				<div class="btn-group btn-group-lg">
+					<button class="btn btn-primary">Start</button>
+					<button class="btn btn-info">Lap</button>
+				</div>
+				<button class="btn btn-danger btn-sm">Reset</button>
+			</div>
+		</div>
+	</div>
+	<div class="container1">
+		<div class="row">
+			<div class="col-xs-4">
+				<h2 class="stopwatch-current">00:00:00:000</h2>
+				<div class="stopwatch-laps">
+				</div>
+			</div>
+			<div class="col-xs-4 stopwatch-controls">
+				<div class="btn-group btn-group-lg">
+					<button class="btn btn-primary">Start</button>
+					<button class="btn btn-info">Lap</button>
+				</div>
+				<button class="btn btn-danger btn-sm">Reset</button>
+			</div>
+		</div>
+	</div>
+	<script>
+		var stopwatch = new Stopwatch(document.documentElement.querySelector('.container'));
+		var stopwatch1 = new Stopwatch(document.documentElement.querySelector('.container1'));
+	</script>
+</body>
+</html>
