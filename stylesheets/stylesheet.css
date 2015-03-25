@@ -41,7 +41,27 @@ table {
 /*******************************************************************************
 Theme Styles
 *******************************************************************************/
+ul li{
+	display: inline;
+}
 
+img {
+	outline: 1px solid blue;
+}
+
+.nav {
+	display: block;
+}
+
+.preview{
+	display: inline-block;
+}
+
+.delimiter:after{
+	content: "";
+	display: block;
+	height: 50px;
+}
 
 
 /*******************************************************************************
