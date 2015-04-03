@@ -41,12 +41,32 @@ table {
 /*******************************************************************************
 Theme Styles
 *******************************************************************************/
+body{
+	background-image: url(../images/background.jpg);
+}
+
 ul li{
 	display: inline;
 }
 
-img {
-	outline: 1px solid blue;
+.preview a {
+	outline: 1px solid black;
+	display: block;
+    margin: 10px auto;
+	width: 95%;
+}
+
+.mask{
+	display: none;
+	background: rgba(40, 41, 46, 0.5);
+}
+
+.mask:hover{
+	display: block;
+}
+
+img{
+	width: 100%;
 }
 
 .nav {
@@ -67,6 +87,10 @@ img {
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
+.preview{
+	width: 33%;
+}
+
 
 
 
